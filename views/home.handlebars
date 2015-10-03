@@ -1,1 +1,10 @@
-Homepage
+<form name="userForm">
+
+  <div class="form-group" ng-repeat="user in formDataOne.users">
+        
+    <label ng-repeat="data in formdata">{[{ data.lable }]}
+    <input type="text" class="form-control" name="firstname" placeholder="{[{data.placeholder}]}"
+    </label>
+  </div>
+
+</form>
