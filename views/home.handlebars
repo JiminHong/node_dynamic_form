@@ -1,11 +1,13 @@
 
-<form name="userForms">
+<form name="userForms" ng-submit="saveItem()">
 
   <div class="form-group">
         
-    <label ng-repeat="data in formdata">{[{ data.label }]}
-    <input type="text" class="form-control" name="firstname" placeholder="{[{data.placeholder}]}"
+    <label class="col-1-2" ng-repeat="data in formdata">{[{ data.label }]}
+    <input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" name="firstname" placeholder="{[{data.placeholder}]}"
     </label>
   </div>
 
+  <button type="submit">Submit</button>
+<pre> {[{ formdata | json }]} </pre>
 </form>
