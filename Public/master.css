@@ -1,7 +1,6 @@
 body{
-	background-color: ivory;
+	background-image:url("../images/skulls.png");
 	font-family: Tahoma, Geneva, sans-serif;
-	font-style: italic;
 	line-height: 24px;
 	font-weight: bold;
 	color: #09C;
@@ -19,21 +18,34 @@ body{
 	line-height: 24px;
 	font-weight: bold;
 	color: #09C;
-	padding-left: 20px;
+	padding-right: 20%;
 }
 button{
+	 font-weight: bold;
+	 width:100px;
+	 height:40px;
 	 padding: 10px 15px;
-     background: #4479BA;
-     color: #FFF;
+     background: #09C;
+     color: ivory;
      border:none;
      border-radius: 4px;
-     margin-left: 35%;
-     margin-top: 20px;
+     margin-right:30%; 
+     margin-top: 40px;
 }
+label{
+	text-align:right;
+}
+
 input{
+	border-radius: 2px;
+	background: #D3D3D3;
+    color: #09C;
+	height:25px;
+	width: 200px;
 	margin-top: 20px;
+	border:none;
 }
 h2{
 	font-size: 32px;
-	margin:auto;
+	margin-left:30%;
 }
