@@ -6,6 +6,9 @@ var express = require('express'),
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+app.use(express.static(__dirname + '/Public'));
+app.use(express.static(__dirname + '/bower_components'));
+
 // Config vars
 //environmental 
 var port = process.env.PORT || 3000;
