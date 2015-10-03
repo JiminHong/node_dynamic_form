@@ -18,9 +18,7 @@ var port = process.env.PORT || 3000;
 // every time user visit here, it goes to / server. 
 // modify response 
 app.get('/', function (req, res) {
-    // res.render('home');
-    var data = {name: 'Gorilla'};
-  	res.render('simple', data);
+    res.render('home');
 });
  
 // port 3000 
