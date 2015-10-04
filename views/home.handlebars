@@ -3,9 +3,38 @@
 
   <div class="form-group">
         
-    <label class="col-1-2" ng-repeat="data in formdata">{[{ data.label }]}
-    <input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" name="firstname" placeholder="{[{data.placeholder}]}"
+    <label ng-repeat="data in formdata">
+
+    	<div class='col-1-2' ng-if="data.type === 'text'">{[{ data.label }]}
+    		<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	</div>
+
+    	<div class='col-1-2' ng-if="data.type === 'username'">{[{ data.label }]}
+    		<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	</div>
+
+    	<div class='col-1-2' ng-if="data.type === 'password'">{[{ data.label }]}
+    		<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	</div>
+
+    	<div class='col-1-2' ng-if="data.type === 'date'">{[{ data.label }]}
+    		<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	</div>
+
+    	<div class='col-1-2' ng-if="data.type === 'email'">{[{ data.label }]}
+    		<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	</div>
+
+    	<div class='col-1-2 float-clear' ng-if="data.type === 'radio'">{[{ data.label }]}
+			<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+		</div>
+
+    	<div class='col-1-2' ng-if="data.type === 'checkbox'">{[{ data.label }]}
+			<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+		</div>
+
     </label>
+   
   </div>
 
   <button type="submit">Submit</button>

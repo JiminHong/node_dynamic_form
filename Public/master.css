@@ -11,6 +11,12 @@ body{
 	float: left;
 	width: 50%;
 }
+
+form{
+	width: 50%;
+	margin-left: 20%;
+}
+
 .form-group{
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
@@ -18,8 +24,13 @@ body{
 	line-height: 24px;
 	font-weight: bold;
 	color: #09C;
-	padding-right: 30%;	
+/*	padding-right: 30%;	*/
 }
+
+.float-clear:last-child{
+	clear: left;
+}
+
 button{
 	 font-weight: bold;
 	 width:150px;
@@ -29,9 +40,9 @@ button{
      color: ivory;
      border:none;
      border-radius: 4px;
-     margin-left:auto;
-     margin-right:30%; 
-     margin-top: 40px;
+/*     margin-left:auto;*/
+     margin-left:570px; 
+     margin-top: 10px;
 }
 label{
 	text-align:right;
@@ -44,11 +55,12 @@ input{
 	/*width: 200px;*/
 	margin-top: 20px;
 	border:none;
+	padding: 2px 10px;
 }
 h2{
 	font-size: 32px;
-	margin-left:30%;
+	text-align: center;
 }
-.windows{
+/*.windows{
 	width:50px;
-}
+}*/

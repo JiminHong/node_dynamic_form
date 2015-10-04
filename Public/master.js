@@ -9,7 +9,8 @@ app.controller("mainController", function($scope){
 
   $scope.saveItem = function(){
     console.log("data",$scope.formdata);
-    
+    console.log("data",$scope.os);
+    console.log("data",$scope.gender);
     }
 
 
@@ -56,38 +57,59 @@ $scope.formdata = [
       type:'date',
       name:'dob',
       value:''  
-    },
+    },  
     { 
-      class:"windows",
-      label:'I have Windows',
+      label:'Microsoft Windows 7',
       type:'checkbox',
-      name:'windows',
-      value:'windows'  
+      name:'windowsSeven',
+      value:''  
     },
     { 
-      class:"mac",
-      label:'I have a Mac',
+      label:'Ubuntu',
       type:'checkbox',
-      name:'mac',
-      value:'mac'  
+      name:'ubuntu',
+      value:''  
     },
     { 
-      class:"male",
+      label:'Windows XP Professional',
+      type:'checkbox',
+      name:'windowsXP',
+      value:''  
+    },
+    { 
+      label:'Linux Mint',
+      type:'checkbox',
+      name:'linuxMint',
+      value:''  
+    },
+    { 
+      label:'Macintosh OSX',
+      type:'checkbox',
+      name:'macintosh',
+      value:''  
+    },  
+    { 
       label:'Male',
       type:'radio',
       name:'sex',
-      value:'male'  
+      value:''  
     },
     { 
-      class:"female",
       label:'Female',
       type:'radio',
       name:'sex',
-      value:'female'  
+      value:''  
+    },
+    { 
+      label: 'Hidden',
+      placeholder: 'This is not showing',
+      type:'hidden',
+      name:'hidden',
+      value:'' 
     }
 
+];
 
-    ];  
 
 // assign this data to an object to store all our form data
 $scope.formData = {};
