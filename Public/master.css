@@ -18,7 +18,7 @@ body{
 	line-height: 24px;
 	font-weight: bold;
 	color: #09C;
-	padding-right: 30%;
+	padding-right: 30%;	
 }
 button{
 	 font-weight: bold;
@@ -36,17 +36,19 @@ button{
 label{
 	text-align:right;
 }
-
 input{
 	border-radius: 2px;
 	background: #D3D3D3;
     color: #09C;
 	height:25px;
-	width: 200px;
+	/*width: 200px;*/
 	margin-top: 20px;
 	border:none;
 }
 h2{
 	font-size: 32px;
 	margin-left:30%;
+}
+.windows{
+	width:50px;
 }

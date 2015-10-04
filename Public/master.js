@@ -56,6 +56,34 @@ $scope.formdata = [
       type:'date',
       name:'dob',
       value:''  
+    },
+    { 
+      class:"windows",
+      label:'I have Windows',
+      type:'checkbox',
+      name:'windows',
+      value:'windows'  
+    },
+    { 
+      class:"mac",
+      label:'I have a Mac',
+      type:'checkbox',
+      name:'mac',
+      value:'mac'  
+    },
+    { 
+      class:"male",
+      label:'Male',
+      type:'radio',
+      name:'sex',
+      value:'male'  
+    },
+    { 
+      class:"female",
+      label:'Female',
+      type:'radio',
+      name:'sex',
+      value:'female'  
     }
 
 
