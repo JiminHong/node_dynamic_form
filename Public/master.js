@@ -9,8 +9,6 @@ app.controller("mainController", function($scope){
 
   $scope.saveItem = function(){
     console.log("data",$scope.formdata);
-    console.log("data",$scope.os);
-    console.log("data",$scope.gender);
     }
 
 
@@ -59,47 +57,31 @@ $scope.formdata = [
       value:''  
     },  
     { 
-      label:'Microsoft Windows 7',
+      label: 'Operating system',
+      placeholder: 'Check operating system you have had',
       type:'checkbox',
-      name:'windowsSeven',
-      value:''  
-    },
-    { 
-      label:'Ubuntu',
-      type:'checkbox',
-      name:'ubuntu',
-      value:''  
-    },
-    { 
-      label:'Windows XP Professional',
-      type:'checkbox',
-      name:'windowsXP',
-      value:''  
-    },
-    { 
-      label:'Linux Mint',
-      type:'checkbox',
-      name:'linuxMint',
-      value:''  
-    },
-    { 
-      label:'Macintosh OSX',
-      type:'checkbox',
-      name:'macintosh',
-      value:''  
+      name:'',
+      value:'',
+      osData:[
+      {value:'Microsoft Windows 7'},
+      {value:'Ubuntu'},
+      {value:'Windows XP Professional'},
+      {value:'Linux Mint'},
+      {value:'Macintosh OSX'}
+      ]  
     },  
-    { 
-      label:'Male',
-      type:'radio',
-      name:'sex',
-      value:''  
-    },
-    { 
-      label:'Female',
-      type:'radio',
-      name:'sex',
-      value:''  
-    },
+    // { 
+    //   label:'Male',
+    //   type:'radio',
+    //   name:'sex',
+    //   value:''  
+    // },
+    // { 
+    //   label:'Female',
+    //   type:'radio',
+    //   name:'sex',
+    //   value:''  
+    // },
     { 
       label: 'Hidden',
       placeholder: 'This is not showing',

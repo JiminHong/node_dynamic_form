@@ -29,8 +29,11 @@
 			<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
 		</div>
 
-    	<div class='col-1-2' ng-if="data.type === 'checkbox'">{[{ data.label }]}
-			<input ng-model="data.value" type="{[{ data.type }]}" name="{[{ data.name }]}" class="form-control" placeholder="{[{data.placeholder}]}">
+    	<div class='col-1-2' ng-if="data.label === 'Operating system'">
+            <h3>{[{ data.label }]}</h3>
+            <label ng-repeat="option in data.osData">{[{ option.value }]}
+    			<input ng-model="option.value" type="checkbox" name="option.value" class="form-control" placeholder="option.value">
+            </label>
 		</div>
 
     </label>
